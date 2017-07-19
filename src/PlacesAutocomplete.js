@@ -263,6 +263,8 @@ class PlacesAutocomplete extends Component {
             {autocompleteItems.map((p, idx) => (
               <div
                 key={p.placeId}
+                onTouchStart={() => this.setActiveItemAtIndex(p.index)}
+                onTouchEnd={() => this.selectAddress(p.suggestion, p.placeId)}
                 onMouseOver={() => this.setActiveItemAtIndex(p.index)}
                 onMouseDown={() => this.selectAddress(p.suggestion, p.placeId)}
                 style={ p.active ? this.inlineStyleFor('autocompleteItem', 'autocompleteItemActive') :this.inlineStyleFor('autocompleteItem') }
