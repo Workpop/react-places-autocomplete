@@ -1,6 +1,6 @@
 {
   "name": "@workpop/react-places-autocomplete",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A React component for Google Maps Places Autocomplete",
   "main": "dist/index.js",
   "scripts": {
